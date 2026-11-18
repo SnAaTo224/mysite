@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名古屋の子どもコミュニティ</title>
+<style>
+    :root {
+        color-scheme: light;
+        --ink: #263d35;
+        --muted: #718078;
+        --green: #466b5a;
+        --green-dark: #315343;
+        --cream: #faf1d8;
+        --paper: #fffefa;
+        --gold: #d6ad61;
+        --line: #e5e8df;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        line-height: 1.85;
+    }
+
+    .page-header {
+        padding: 64px 24px 54px;
+        background: linear-gradient(135deg, #e8eee5, #f3ead6);
+        border-bottom: 1px solid #e0e5da;
+    }
+
+    .header-inner,
+    main {
+        width: min(100% - 40px, 920px);
+        margin-inline: auto;
+    }
+
+    h1 {
+        margin: 0;
+        color: var(--green-dark);
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        line-height: 1.35;
+    }
+
+    .updated {
+        margin: 12px 0 18px;
+        color: var(--muted);
+        font-size: 0.88rem;
+    }
+
+    .intro {
+        max-width: 40em;
+        margin: 0;
+        color: #45594f;
+        font-size: 1.08rem;
+    }
+
+    main { padding-block: 44px 64px; }
+
+    .community-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+        gap: 22px;
+    }
+
+    .community-card {
+        overflow: hidden;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgb(46 64 54 / 6%);
+    }
+
+    .community-card img {
+        display: block;
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+        background: #edf0e9;
+    }
+
+    .card-content { padding: 22px 24px 24px; }
+
+    h2 {
+        margin: 0 0 10px;
+        color: var(--green-dark);
+        font-size: 1.35rem;
+        line-height: 1.5;
+    }
+
+    .card-content p { margin: 8px 0; }
+
+    a {
+        color: #35654f;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+    }
+
+    a:hover { color: #8a6127; }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    .about {
+        margin-top: 40px;
+        padding: 28px;
+        background: #edf1e9;
+        border: 1px solid #dfe6dc;
+        border-radius: 16px;
+    }
+
+    .about h2 { margin-bottom: 12px; }
+    .about h3 { margin: 22px 0 8px; color: var(--green-dark); font-size: 1.05rem; }
+    .about p { margin: 0; }
+    .sources { margin: 0; padding-left: 1.35em; }
+    .sources li + li { margin-top: 6px; }
+
+    @media (max-width: 560px) {
+        .page-header { padding: 44px 0 38px; }
+        .header-inner, main { width: min(100% - 32px, 920px); }
+        main { padding-block: 28px 44px; }
+        .community-list { gap: 16px; }
+        .community-card img { height: 190px; }
+        .card-content { padding: 18px 20px 20px; }
+        .about { margin-top: 28px; padding: 22px 20px; }
+    }
+</style>
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-inner">
+            <h1>名古屋の子どもコミュニティ</h1>
+            <p class="updated">最終更新：2026 年 11 月 18 日</p>
+            <p class="intro">名古屋の子どもコミュニティ（フリースクール）を３つ紹介します。</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="community-list">
+            <section class="community-card">
+                <img src="images/aichi mori .jpg" alt="あいち惟の森">
+                <div class="card-content">
+                    <h2>あいち惟の森</h2>
+                    <p>自然の中での体験や対話を重視。子ども自身が学び方を選ぶ。</p>
+                    <p>ホームページ：<a href="https://yuinomori.studio.site/">オルタナティブ・スクール｜あいち惟の森</a></p>
+                </div>
+            </section>
+
+            <section class="community-card">
+                <img src="images/deraneko.png" alt="でらねこ">
+                <div class="card-content">
+                    <h2>でらねこ</h2>
+                    <p>お寺を拠点にした自由な居場所。安心感のある環境で自分らしく過ごせる。</p>
+                    <p>ホームページ：<a href="https://sainenzi9.wixsite.com/deraneko">フリースクールでらねこ | 名古屋市 | 西念寺</a></p>
+                    <p>インスタグラム：<a href="https://www.instagram.com/dera.neko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">Instagram</a></p>
+                </div>
+            </section>
+
+            <section class="community-card">
+                <img src="images/logo.png" alt="八事のおうち”やごっち">
+                <div class="card-content">
+                    <h2>八事のおうち「やごっち」</h2>
+                    <p>「家庭でも学校でもない第三の居場所」として、自主性や人との関わりを大切にする。</p>
+                    <p>ホームページ：<a href="https://nagoya-asoviva.jp/yagochi/">八事のおうち”やごっち” – NPO法人なごやAsoviva　フリースクール</a></p>
+                </div>
+            </section>
+        </div>
+
+        <section class="about">
+            <h2>このページについて</h2>
+            <p>作者：さ／画像：／ICT 入門の授業で作成</p>
+            <h3>画像の出典</h3>
+            <ul class="sources">
+                <li><a href="https://storage.googleapis.com/production-os-assets/assets/2100e15e-22b5-43ba-b87c-5921e0ce3ba0">あいち惟の森の画像（サイト名を確認）</a></li>
+                <li><a href="https://sainenzi9.wixsite.com/deraneko">でらねこの画像（フリースクールでらねこ | 名古屋市 | 西念寺）</a></li>
+                <li><a href="https://nagoya-asoviva.jp/yagochi/">八事のおうち「やごっち」の画像（八事のおうち”やごっち” – NPO法人なごやAsoviva フリースクール）</a></li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
